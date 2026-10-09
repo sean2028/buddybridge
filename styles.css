@@ -92,7 +92,7 @@ a:hover { color: var(--gold-dark); }
   color: var(--gold);
 }
 
-.dropdown {
+.main-nav .dropdown{
   display: none;
   position: absolute;
   top: 100%;
