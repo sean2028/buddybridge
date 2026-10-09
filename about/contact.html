@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — BuddyBridge</title>
+<meta name="description" content="Get in touch with BuddyBridge. Come play buddy with us!">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html">Buddy<span>Bridge</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../video-series.html">Video Series</a></li>
+        <li class="has-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+          <ul class="dropdown" aria-label="Get Involved submenu">
+            <li><a href="../get-involved/volunteer.html">Volunteer</a></li>
+            <li><a href="../get-involved/events.html">Events</a></li>
+            <li><a href="../get-involved/how-to-help.html">How to Help</a></li>
+          </ul>
+        </li>
+        <li><a href="../faq.html">FAQ</a></li>
+        <li class="has-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false">About</a>
+          <ul class="dropdown" aria-label="About submenu">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="mission-impact.html">Our Mission &amp; Impact</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="advocacy.html">Advocacy</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Others</a>
+          <ul class="dropdown" aria-label="Others submenu">
+            <li><a href="../others/laws-reference.html">Laws &amp; Reference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1 class="page-title">Get in Touch</h1>
+    <p class="page-sub">Come play buddy!</p>
+
+    <section class="section">
+      <div class="card">
+        <h3>Reach us</h3>
+        <p>We'd love to hear from you — whether you want to volunteer, partner with us, or bring BuddyBridge to your school.</p>
+        <form id="contact-form" aria-label="Contact form">
+          <p>
+            <label for="cf-name"><strong>Name *</strong></label><br>
+            <input type="text" id="cf-name" name="name" required style="width:100%;max-width:420px;padding:0.6rem;border:1px solid #ccc;border-radius:8px;">
+          </p>
+          <p>
+            <label for="cf-email"><strong>Email *</strong></label><br>
+            <input type="email" id="cf-email" name="email" required style="width:100%;max-width:420px;padding:0.6rem;border:1px solid #ccc;border-radius:8px;">
+          </p>
+          <p>
+            <label for="cf-comment"><strong>Comment (school, grade) *</strong></label><br>
+            <textarea id="cf-comment" name="comment" rows="5" required style="width:100%;max-width:420px;padding:0.6rem;border:1px solid #ccc;border-radius:8px;"></textarea>
+          </p>
+          <p><button class="btn btn-navy" type="submit">Submit</button></p>
+          <p id="cf-note" role="status" style="display:none;color:var(--navy-2);font-weight:600;">Thanks for reaching out! Our contact form is being connected — please check back soon, or find us at a Friday badminton night.</p>
+        </form>
+      </div>
+    </section>
+
+    <blockquote class="pullquote">
+      "Courage is fire, and bullying is smoke."
+      <cite>— Benjamin Disraeli</cite>
+    </blockquote>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-brand">Buddy<span>Bridge</span></p>
+    <ul class="footer-nav" aria-label="Footer navigation">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../video-series.html">Video Series</a></li>
+      <li><a href="../get-involved/volunteer.html">Volunteer</a></li>
+      <li><a href="../get-involved/events.html">Events</a></li>
+      <li><a href="../get-involved/how-to-help.html">How to Help</a></li>
+      <li><a href="../faq.html">FAQ</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="mission-impact.html">Our Mission &amp; Impact</a></li>
+      <li><a href="partnerships.html">Partnerships</a></li>
+      <li><a href="advocacy.html">Advocacy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="../others/laws-reference.html">Laws &amp; Reference</a></li>
+    </ul>
+    <p class="copyright">© 2026 BuddyBridge</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('cf-note').style.display = 'block';
+  this.querySelector('button[type="submit"]').disabled = true;
+});
+</script>
+
+</body>
+</html>
