@@ -60,6 +60,7 @@ a:hover { color: var(--gold-dark); }
   white-space: nowrap;
 }
 .brand span { color: var(--gold); }
+.brand-logo { height: 30px; width: 30px; vertical-align: -8px; margin-right: 8px; border-radius: 7px; }
 
 .main-nav ul {
   list-style: none;
